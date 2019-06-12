@@ -1,0 +1,16 @@
+=========================================================================
+1)  Create the pipe using CLI.
+=>  ng generate pipe <Pipe name>
+=========================================================================
+2)  Make some logic on transform method.
+=>
+  {
+    transform(value: number, power?: number): number {
+      return Math.pow(value, isNaN(power) ? 1 : power);
+    }
+  }
+=========================================================================
+3)  Used it in the component.
+
+=>  <h2>Square: {{2 | square: 3}}</h2>
+=========================================================================
